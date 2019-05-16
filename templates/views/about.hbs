@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>About</title>
 </head>
+
 <body>
-    {{>header}}
-    <p>{{name}}</p>
-    <img src="/img/mrrobot.jpg" alt="Mr Robot">
+    <div class="main-content">
+        {{>header}}
+        <img class="portrait" src="/img/mrrobot.jpg" alt="Mr Robot">
+    </div>
+    {{>footer}}
 </body>
+
 </html>

@@ -41,6 +41,21 @@ app.get('/help', (req, res) => {
     })
 })
 
+app.get('/help/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'S Kumar',
+        errorMessage: 'Help Article Not Found'
+    })
+})
+
+app.get('*', (req, res) => {
+    res.render('404', {
+        errorMessage: 'Page Not Found!',
+        name: 'Mr Kumar'
+    })
+})
+
 // console.log(__dirname);
 // console.log(path.join(__dirname, '../public'));
 
