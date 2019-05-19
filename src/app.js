@@ -22,7 +22,7 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
   res.render('index', {
     title: 'Weather App',
-    name: 'Suman'
+    name: 'Suman Kumar'
   })
 })
 // line 13 - index ref to index.hbs
@@ -66,11 +66,6 @@ app.get('/weather', (req, res) => {
       })
     })
   })
-
-//   res.send({
-//     forecast: req.query.address,
-//     location: 'Bengalore'
-//   })
 })
 
 app.get('/products', (req, res) => {
