@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "author": "Suman Kumar",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-node": "^9.0.1",
     "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.0"
   }
 }
